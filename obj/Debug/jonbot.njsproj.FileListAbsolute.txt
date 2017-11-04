@@ -1,0 +1,2 @@
+C:\Users\grumb\Documents\jonbot\obj\Debug\jonbot.njsprojResolveAssemblyReference.cache
+C:\Users\grumb\Documents\jonbot\bin\Microsoft.NodejsTools.WebRole.dll

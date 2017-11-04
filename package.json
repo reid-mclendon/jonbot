@@ -1,0 +1,28 @@
+{
+  "name": "jonbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "now -e CONSUMER_KEY=@consumer-key -e CONSUMER_SECRET=@consumer-secret -e ACCESS_TOKEN=@access-token  -e ACCESS_TOKEN_SECRET=@access-token-secret"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "1.0.10",
+    "dotenv": "^4.0.0",
+    "googlenews-rss-scraper": "1.0.2",
+    "twit": "^2.2.5",
+    "rnd-flickr": "1.1.1",
+    "date-and-time": "0.5.0"
+  },
+  "now": {
+    "alias": "jonathan",
+    "files": [
+      "src",
+      "index.js"
+    ]
+  }
+}
