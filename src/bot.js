@@ -1,10 +1,16 @@
+require('dotenv').config()
 const Twit = require('twit')
 const config = require('./config')
 const Chance = require('chance')
 const date = require('date-and-time')
 var GoogleNews = require('googlenews-rss-scraper');
 var rndFlickr = require('rnd-flickr');
-const bot = new Twit(config)
+const bot = new Twit({
+consumer_key:         process.env.CONSUMER_KEY,
+  consumer_secret:      process.env.CONSUMER_SECRET,
+  access_token:         process.env.ACCESS_TOKEN,
+  access_token_secret:  process.env.ACCESS_TOKEN_SECRET,
+})
 const fs = require('fs')
 const path = require('path')
 const os = require('os');

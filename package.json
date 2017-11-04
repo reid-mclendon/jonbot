@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "deploy": "now -e CONSUMER_KEY=@consumer-key -e CONSUMER_SECRET=@consumer-secret -e ACCESS_TOKEN=@access-token  -e ACCESS_TOKEN_SECRET=@access-token-secret"
   },
   "keywords": [],
   "author": "",
