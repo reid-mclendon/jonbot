@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/bot.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,6 @@
     "dotenv": "^4.0.0",
     "googlenews-rss-scraper": "1.0.2",
     "twit": "^2.2.5",
-    "rnd-flickr": "1.1.1",
     "date-and-time": "0.5.0"
   },
   "now": {

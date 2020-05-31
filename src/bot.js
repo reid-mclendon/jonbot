@@ -4,7 +4,6 @@ const config = require('./config')
 const Chance = require('chance')
 const date = require('date-and-time')
 var GoogleNews = require('googlenews-rss-scraper');
-var rndFlickr = require('rnd-flickr');
 const bot = new Twit({
 consumer_key:         process.env.CONSUMER_KEY,
   consumer_secret:      process.env.CONSUMER_SECRET,
@@ -54,11 +53,11 @@ var quotez =
  '"Man is born free and everywhere he is in chains" ~ Jean-Jacques Rousseau'
 ];
 
+setInterval(Tweet, (ch.integer({ min: 5000, max: 30000})));
+
 var b64content;
 var mentioned = bot.stream('statuses/filter', { track: ['@jonbotxiv'] });
 mentioned.on('tweet', Listen);
-
-setInterval(Tweet, (ch.integer({ min: 60000, max: 60000 * 60})));
 
 function Listen(tweet)
 {
@@ -170,16 +169,11 @@ function Tweet()
                 TweetQuote();
                 break;
             }
-
-        case "Photos":
-            {
-                TweetPhoto();
-                break;
-            }
     }
 
 }
 
+/*
 function TweetPhoto()
 {
     var keywords = ch.pickone(['squirrel', 'dog food', 'pigeon', 'tennis ball dog', 'kitten']);
@@ -228,6 +222,7 @@ function TweetPhoto()
 
     });
 }
+*/
 
 function TweetNews()
 {
